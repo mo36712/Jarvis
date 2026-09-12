@@ -1,0 +1,27 @@
+# Desktop-Oberfläche
+PySide6>=6.7,<6.11
+
+# Lokale Spracheingabe und Sprachausgabe
+vosk>=0.3.45,<0.4
+sounddevice>=0.5,<0.6
+pyttsx3>=2.98,<3
+
+# Optional: eigene geklonte Stimme, komplett lokal und unbegrenzt (siehe STIMME_KLONEN.md).
+# Nur nötig, wenn du in den Einstellungen "Eigene geklonte Stimme" auswählst.
+# WICHTIG: torch NICHT einfach per "pip install torch" installieren – siehe STIMME_KLONEN.md
+# für den richtigen Befehl (mit oder ohne Nvidia-GPU, sonst wird die CPU-Version ~viele GB groß
+# und unnötig langsam installiert).
+coqui-tts>=0.27,<0.28
+
+# Konfiguration und Netzwerkintegrationen
+keyring>=25,<27
+requests>=2.32,<3
+openai>=1.75,<2
+
+# Optionale Google-Integrationen (Kalender und Gmail)
+google-api-python-client>=2.170,<3
+google-auth-httplib2>=0.2,<1
+google-auth-oauthlib>=1.2,<2
+
+# Paketierung
+pyinstaller>=6.13,<7
